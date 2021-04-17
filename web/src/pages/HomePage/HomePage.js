@@ -4,6 +4,7 @@ import logo from './mtntpcdng_lg.svg'
 const HomePage = () => {
   return (
     <div>
+      <img src={logo} alt="My Logo" />
       <div className="flex flex-wrap align-content-center">
         <h1 className="font-semibold text-red-500">
           Welcome to the new and improved mountainTopCoding(
@@ -12,7 +13,6 @@ const HomePage = () => {
           </span>
           );!
         </h1>
-        <logo />
       </div>
       <div>
         <p>
