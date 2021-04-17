@@ -12,7 +12,7 @@ const HomePage = () => {
           </span>
           );!
         </h1>
-        <img src={logo} alt="Logo" />
+        <img src={logo} type="image/svg" alt="Logo" />
       </div>
       <div>
         <p>
