@@ -1,4 +1,5 @@
 import { Link, routes } from '@redwoodjs/router'
+import logo from './mtntpcdng_lg.svg'
 
 const HomePage = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage = () => {
           </span>
           );!
         </h1>
+        <img src={logo} alt="Logo" />
       </div>
       <div>
         <p>
