@@ -1,11 +1,14 @@
 import { Link, routes } from '@redwoodjs/router'
-import logo from './mtntpcdng_lg.svg'
+import Logo from './mtntpcdng_lg.svg'
 
 const HomePage = () => {
   return (
     <div>
-      <img src={logo} alt="My Logo" />
-      <div className="flex flex-wrap align-content-center">
+      <div className="rotate-90">
+        <Logo />
+      </div>
+
+      <div className="">
         <h1 className="font-semibold text-red-500">
           Welcome to the new and improved mountainTopCoding(
           <span role="img" aria-label="mountain with snow-cap">
@@ -14,6 +17,7 @@ const HomePage = () => {
           );!
         </h1>
       </div>
+
       <div>
         <p>
           Find the original{' '}
