@@ -4,6 +4,10 @@ module.exports = {
   purge: [],
   darkMode: 'media', // or 'media' or 'class'
   theme: {
+    colors: {
+      blue: '#4391cdff',
+      white: '#FFFFFF',
+    },
     linearGradientColors: (theme) => theme('colors'),
     heroPatterns: {
       topography: heropatterns.topography,
