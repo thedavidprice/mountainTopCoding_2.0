@@ -4,7 +4,7 @@ import Logo from './mtntpcdng_lg.svg'
 const HomePage = () => {
   return (
     <div>
-      <div className="rotate-90">
+      <div className="">
         <Logo />
       </div>
 
