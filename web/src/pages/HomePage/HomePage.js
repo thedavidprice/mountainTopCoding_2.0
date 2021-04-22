@@ -98,8 +98,11 @@ const HomePage = () => {
       <>
         <p>This is ultra basic for now, more to come soon.</p>
         <p>
-          Here is a link to `<Link to={routes.about()}>About</Link>` a page all
-          about me, so you should totally visit it!
+          Here is a link to&nbsp;
+          <Link to={routes.about()} className="text-blue-500">
+            About
+          </Link>
+          &nbsp;a page all about me, so you should totally visit it!
         </p>
       </>
       <Footer />
