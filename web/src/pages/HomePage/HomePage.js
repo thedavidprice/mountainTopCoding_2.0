@@ -98,8 +98,8 @@ const HomePage = () => {
       <>
         <p>This is ultra basic for now, more to come soon.</p>
         <p>
-          Here is a link to `<Link to={routes.home()}>Home</Link>`, which you
-          are already at so it will appear not to work...
+          Here is a link to `<Link to={routes.about()}>About</Link>` a page all
+          about me, so you should totally visit it!
         </p>
       </>
       <Footer />
