@@ -2,21 +2,23 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>
+    <div className="flex flex-row justify-between">
       <p>
         Built with{' '}
         <a
           href="https://redwoodjs.com/"
           target="_blank"
           rel="noopener noreferrer"
+          className="text-blue-500"
         >
           RedwoodJS
         </a>
-        and{' '}
+        &nbsp;and{' '}
         <a
           href="https://www.tailwindcss.com"
           target="_blank"
           rel="noopener noreferrer"
+          className="text-blue-500"
         >
           TailwindCSS
         </a>
@@ -28,6 +30,7 @@ const Footer = () => {
           href="https://mountaintopcoding.com"
           target="_blank"
           rel="noopener noreferrer"
+          className="text-blue-500"
         >
           mountainTopCoding(
           <span role="img" aria-label="mountain with snow-cap">

@@ -1,7 +1,7 @@
 import { Link, routes } from '@redwoodjs/router'
 import Logo from './mtntpcdng_lg.svg'
 
-import Footer from '../src/components/Footer'
+import Footer from '../../components/Footer'
 
 const HomePage = () => {
   return (
