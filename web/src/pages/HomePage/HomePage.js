@@ -4,23 +4,20 @@ import Logo from './mtntpcdng_lg.svg'
 const HomePage = () => {
   return (
     <div>
-      <div className="">
+      <div className="mx-6 my-6">
         <Logo />
       </div>
 
       <div className="">
-        <h1 className="font-semibold text-red-500">
-          Welcome to the new and improved mountainTopCoding(
-          <span role="img" aria-label="mountain with snow-cap">
-            &#127956;
-          </span>
-          );!
+        <h1 className="font-semibold text-5xl w-1/2 justify-center mx-auto">
+          Hello, I am <span className="text-blue-500">Isaac Tait</span>. I am a
+          Jamstack web developer.
         </h1>
       </div>
 
       <div>
         <p>
-          Find the original{' '}
+          Check out the original{' '}
           <code>
             mountainTopCoding(
             <span role="img" aria-label="mountain with snow-cap">
@@ -32,10 +29,11 @@ const HomePage = () => {
             href="https://mountaintopcoding.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-red-500 hover:bg-red-500 hover:text-white"
+            className="text-blue-500 hover:bg-blue-500 hover:text-white"
           >
             here
           </a>
+          .
         </p>
       </div>
       <>
