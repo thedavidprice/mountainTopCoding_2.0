@@ -7,7 +7,7 @@ import Routes from 'src/Routes'
 import './index.css'
 
 const App = () => (
-  <div className="bg-topography">
+  <div className="bg-repeat w-full h-full heropattern-topography-blue-500">
     <FatalErrorBoundary page={FatalErrorPage}>
       <RedwoodApolloProvider>
         <Routes />
