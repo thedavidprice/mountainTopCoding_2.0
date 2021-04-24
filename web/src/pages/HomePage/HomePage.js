@@ -1,7 +1,6 @@
 import { Link, routes } from '@redwoodjs/router'
 
 import Logo from './mtntpcdng_lg.svg'
-
 import Footer from '../../components/Footer'
 
 const HomePage = () => {
@@ -16,18 +15,18 @@ const HomePage = () => {
         Jamstack web developer.
       </p>
 
-      <div className="my-8 mx-4 text-xs md:text-base">
+      <div className="my-4 mx-4 text-xs md:text-base">
         <p>
+          _&nbsp;
           <Link
             to={routes.about()}
             className="text-blue-500 hover:bg-blue-500 hover:text-white"
           >
             About
           </Link>
-          &nbsp;page.
         </p>
         <p>
-          The OG{' '}
+          _&nbsp;The OG{' '}
           <a
             href="https://mountaintopcoding.com"
             target="_blank"

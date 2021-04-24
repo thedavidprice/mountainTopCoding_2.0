@@ -3,6 +3,7 @@ import { Link, routes } from '@redwoodjs/router'
 import picture from './profile.jpg'
 import tokyo from './tokyoBay.png'
 import Logo from './mtntpcdng_lg.svg'
+import Footer from '../../components/Footer'
 
 const AboutPage = () => {
   return (
@@ -19,9 +20,11 @@ const AboutPage = () => {
             &#127956;
           </span>
           ); my portfolio webpage that I built using Jamstack solutions. I am
-          glad you are here. My journey to becoming a web developer started on
-          March 12, 2019 but to fully understand my story I have to go back a
-          little further.
+          glad you are here.
+        </p>
+        <p className="mt-2">
+          My journey to becoming a web developer started on March 12, 2019 but
+          to fully understand my story I have to go back a little further.
         </p>
         <img
           src={picture}
@@ -74,65 +77,32 @@ const AboutPage = () => {
           Cheers!
         </p>
       </div>
-      <hr />
-      <footer className="flex flex-row mx-4 justify-between bg-gray-500">
+
+      <p className="flex flex-row justify-between bg-gray-500">
         <p>
-          A link to my{' '}
+          My{' '}
           <a
             href="https://mountaintop-coding.s3-us-west-1.amazonaws.com/Isaac+Tait+-+Junior+Web+Developer.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500"
+            className="text-blue-500 hover:bg-blue-500 hover:text-white"
           >
             Resume
           </a>
           .&nbsp;
         </p>
         <p>
-          Take me{' '}
-          <Link to={routes.home()} className="text-blue-500">
+          Take me to the{' '}
+          <Link
+            to={routes.home()}
+            className="text-blue-500 hover:bg-blue-500 hover:text-white"
+          >
             Home
           </Link>
           .&nbsp;
         </p>
-        <p>
-          Another&nbsp;
-          <a
-            href="https://mountaintopcoding.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-500"
-          >
-            mountainTopCoding(
-            <span role="img" aria-label="mountain with snow-cap">
-              &#127956;
-            </span>
-            );
-          </a>
-          &nbsp;project.
-        </p>
-        <p>
-          &nbsp;Built with&nbsp;
-          <a
-            href="https://www.redwoodjs.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-500"
-          >
-            RedwoodJS&nbsp;
-          </a>
-          and&nbsp;
-          <a
-            href="https://www.tailwindcss.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-500"
-          >
-            TailwindCSS
-          </a>
-          .
-        </p>
-      </footer>
+      </p>
+      <Footer />
     </div>
   )
 }

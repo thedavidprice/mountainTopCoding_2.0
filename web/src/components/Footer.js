@@ -2,14 +2,14 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className="flex flex-row justify-between text-xs md:text-base">
+    <div className="flex flex-row justify-between text-xs md:text-base bg-blue-500 w-full">
       <p>
         Built with{' '}
         <a
           href="https://redwoodjs.com/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-500"
+          className="text-white"
         >
           RedwoodJS
         </a>
@@ -18,7 +18,7 @@ const Footer = () => {
           href="https://www.tailwindcss.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-500"
+          className="text-white"
         >
           TailwindCSS
         </a>
