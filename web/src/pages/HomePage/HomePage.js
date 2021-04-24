@@ -11,37 +11,37 @@ const HomePage = () => {
         <Logo />
       </Link>
 
-      <p className="font-semibold text-5xl w-1/2 justify-center mx-auto">
+      <p className="font-semibold text-xl md:text-5xl w-1/2 justify-center mx-auto">
         Hello, I am <span className="text-blue-500">Isaac Tait</span> - a
         Jamstack web developer.
       </p>
 
-      <div className="mt-8 mb-8 mx-4 flex flex-row justify-between">
+      <div className="my-8 mx-4 text-xs md:text-base">
         <p>
-          Check out the&nbsp;
-          <Link to={routes.about()} className="text-blue-500">
+          <Link
+            to={routes.about()}
+            className="text-blue-500 hover:bg-blue-500 hover:text-white"
+          >
             About
           </Link>
-          &nbsp;page (you should totally visit it).
+          &nbsp;page.
         </p>
         <p>
-          Check out the original{' '}
-          <code>
-            mountainTopCoding(
-            <span role="img" aria-label="mountain with snow-cap">
-              &#127956;
-            </span>
-            );
-          </code>
+          The OG{' '}
           <a
             href="https://mountaintopcoding.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 hover:bg-blue-500 hover:text-white"
           >
-            here
+            <code>
+              mountainTopCoding(
+              <span role="img" aria-label="mountain with snow-cap">
+                &#127956;
+              </span>
+              );
+            </code>
           </a>
-          .
         </p>
       </div>
 

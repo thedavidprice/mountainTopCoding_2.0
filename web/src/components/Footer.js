@@ -24,22 +24,6 @@ const Footer = () => {
         </a>
         .
       </p>
-      <p>
-        Another{' '}
-        <a
-          href="https://mountaintopcoding.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-500"
-        >
-          mountainTopCoding(
-          <span role="img" aria-label="mountain with snow-cap">
-            &#127956;
-          </span>
-          );
-        </a>
-        project.
-      </p>
     </div>
   )
 }
