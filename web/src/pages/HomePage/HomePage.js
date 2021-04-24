@@ -45,25 +45,25 @@ const HomePage = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-4 gap-4 heropattern-topography-blue-500 pb-2">
-        <div className="box-content h-32 w-32 p-4"></div>
-        <div className="box-content h-32 w-32 p-4"></div>
-        <div className="box-content h-32 w-32 p-4 mr-8 mt-2 border-4 rounded-full"></div>
-        <div className="box-content h-32 w-32 p-4"></div>
-        <div className="box-content h-32 w-32 p-4 ml-12 border-4 rounded-full"></div>
-        <div className="box-content h-32 w-32 p-4"></div>
-        <div className="box-content h-32 w-32 p-4"></div>
-        <div className="box-content h-32 w-32 p-4 border-4 rounded-full ml-12"></div>
-        <div className="box-content h-32 w-32 p-4"></div>
-        <div className="box-content h-32 w-32 p-4 border-4 rounded-full ml-20"></div>
-        <div className="box-content h-32 w-32 p-4"></div>
-        <div className="box-content h-32 w-32 p-4"></div>
-        <div className="box-content h-32 w-32 p-4 border-4 rounded-full ml-2"></div>
-        <div className="box-content h-32 w-32 p-4"></div>
-        <div className="box-content h-32 w-32 p-4"></div>
-        <div className="box-content h-32 w-32 p-4 border-4 rounded-full mr-12"></div>
+      <div className="grid grid-cols-3 gap-2 md:grid-cols-4 md:gap-4 heropattern-topography-blue-500 pb-2">
+        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
+        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
+        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 mr-8 mt-2 border-4 rounded-full"></div>
+        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
+        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 ml-12 border-4 rounded-full"></div>
+        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
+        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
+        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 border-4 rounded-full ml-12"></div>
+        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
+        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 border-4 rounded-full ml-20"></div>
+        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
+        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
+        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 border-4 rounded-full ml-2"></div>
+        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
+        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
+        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 border-4 rounded-full mr-12"></div>
       </div>
-      <hr />
+
       <Footer />
     </div>
   )
