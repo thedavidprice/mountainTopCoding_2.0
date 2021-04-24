@@ -1,6 +1,13 @@
 import { Link, routes } from '@redwoodjs/router'
 
 import Logo from './mtntpcdng_lg.svg'
+import Palm from './palm.png'
+import Sword from './swords.png'
+import Compass from './compass.png'
+import Ship from './ship.png'
+import Chest from './chest.png'
+import Skull from './skull.png'
+
 import Footer from '../../components/Footer'
 
 const HomePage = () => {
@@ -47,31 +54,31 @@ const HomePage = () => {
       <div className="grid grid-cols-3 gap-2 md:grid-cols-4 md:gap-4 heropattern-topography-blue-500 pb-2">
         <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
         <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
-        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 mr-8 mt-2 border-4 rounded-full">
-          <p>Fallfish Tenkara</p>
+        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 mr-8 mt-2">
+          <img src={Palm} alt="palm tree icon" />
         </div>
         <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
-        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 ml-12 border-4 rounded-full">
-          <p>VW Type II</p>
-        </div>
-        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
-        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
-        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 border-4 rounded-full ml-12">
-          <p>Blog</p>
-        </div>
-        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
-        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 border-4 rounded-full ml-20">
-          <p>The Birds</p>
+        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 ml-12">
+          <img src={Compass} alt="compass" />
         </div>
         <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
         <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
-        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 border-4 rounded-full ml-2">
-          <p>GitHub</p>
+        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 ml-12">
+          <img src={Ship} alt="ship" />
+        </div>
+        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
+        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 ml-20">
+          <img src={Chest} alt="treasure chest" />
         </div>
         <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
         <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
-        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 border-4 rounded-full mr-12">
-          <p>LinkedIn</p>
+        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 ml-2">
+          <img src={Skull} alt="skull and cross bones" />
+        </div>
+        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
+        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
+        <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 mr-12">
+          <img src={Sword} alt="crossed swords" />
         </div>
       </div>
 
