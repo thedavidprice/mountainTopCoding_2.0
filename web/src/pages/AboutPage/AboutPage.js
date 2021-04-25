@@ -8,9 +8,9 @@ import Footer from '../../components/Footer'
 const AboutPage = () => {
   return (
     <div className="text-lg bg-gray-500">
-      <div className="mx-6 my-6">
+      <Link to={routes.home()} className="mx-6">
         <Logo />
-      </div>
+      </Link>
 
       <div className="flex flex-col mx-4 mb-4">
         <p className="font-medium text-2xl text-blue-500">About Me</p>
@@ -77,31 +77,6 @@ const AboutPage = () => {
           Cheers!
         </p>
       </div>
-
-      <p className="flex flex-row justify-between bg-gray-500">
-        <p>
-          My{' '}
-          <a
-            href="https://mountaintop-coding.s3-us-west-1.amazonaws.com/Isaac+Tait+-+Junior+Web+Developer.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-500 hover:bg-blue-500 hover:text-white"
-          >
-            Resume
-          </a>
-          .&nbsp;
-        </p>
-        <p>
-          Take me to the{' '}
-          <Link
-            to={routes.home()}
-            className="text-blue-500 hover:bg-blue-500 hover:text-white"
-          >
-            Home
-          </Link>
-          .&nbsp;
-        </p>
-      </p>
       <Footer />
     </div>
   )

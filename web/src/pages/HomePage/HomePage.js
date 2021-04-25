@@ -13,9 +13,9 @@ import Footer from '../../components/Footer'
 const HomePage = () => {
   return (
     <div>
-      <Link to="https://mountaintopcoding.dev" className="mx-6">
+      <div className="mx-6">
         <Logo />
-      </Link>
+      </div>
 
       <p className="font-semibold text-xl md:text-5xl w-1/2 justify-center mx-auto">
         Hello, I am <span className="text-blue-500">Isaac Tait</span> - a
@@ -47,6 +47,17 @@ const HomePage = () => {
               </span>
               );
             </code>
+          </a>
+        </p>
+        <p>
+          _&nbsp;My{' '}
+          <a
+            href="https://mountaintop-coding.s3-us-west-1.amazonaws.com/Isaac+Tait+-+Junior+Web+Developer.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:bg-blue-500 hover:text-white"
+          >
+            Resume
           </a>
         </p>
       </div>
