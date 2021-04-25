@@ -66,30 +66,66 @@ const HomePage = () => {
         <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
         <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
         <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 mr-8 mt-2">
-          <img src={Palm} alt="palm tree icon" />
+          <a
+            href="https://www.fallfishtenkara.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Palm} alt="palm tree icon" />
+          </a>
         </div>
         <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
         <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 ml-12">
-          <img src={Compass} alt="compass" />
+          <a
+            href="https://vwtypetwo.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Compass} alt="compass" />
+          </a>
         </div>
         <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
         <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
         <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 ml-12">
-          <img src={Ship} alt="ship" />
+          <a
+            href="https://github.com/Isaac-Tait"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Ship} alt="ship" />
+          </a>
         </div>
         <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
         <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 ml-20">
-          <img src={Chest} alt="treasure chest" />
+          <a
+            href="https://github.com/Isaac-Tait/A-Novel-by-Isaac-Tait"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Chest} alt="treasure chest" />
+          </a>
         </div>
         <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
         <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
         <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 ml-2">
-          <img src={Skull} alt="skull and cross bones" />
+          <a
+            href="https://www.linkedin.com/in/isaacmtait/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Skull} alt="skull and cross bones" />
+          </a>
         </div>
         <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
         <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
         <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 mr-12">
-          <img src={Sword} alt="crossed swords" />
+          <a
+            href="https://blog.mountaintopcoding.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Sword} alt="crossed swords" />
+          </a>
         </div>
       </div>
 
