@@ -13,7 +13,7 @@ import Footer from '../../components/Footer'
 const HomePage = () => {
   return (
     <div>
-      <div className="mx-6">
+      <div className="mx-6 my-6">
         <Logo />
       </div>
 
