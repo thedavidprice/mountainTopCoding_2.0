@@ -31,18 +31,18 @@ const HomePage = () => {
 
   return (
     <div>
-      <div className="h-screen bg-indigo-100">
+      <div className="h-screen flex flex-wrap justify-center content-center bg-indigo-100">
         <Logo />
       </div>
 
-      <div className="h-screen bg-indigo-200 js-show-on-scroll">
+      <div className="h-screen flex flex-wrap justify-center content-center bg-indigo-200 js-show-on-scroll">
         <p className="font-semibold text-xl md:text-5xl w-1/2 justify-center mx-auto">
           Hello, I am <span className="text-blue-500">Isaac Tait</span> - a
           Jamstack web developer.
         </p>
       </div>
 
-      <div className="h-screen py-4 px-4 text-xs bg-indigo-300 md:text-base js-show-on-scroll">
+      <div className="h-screen flex flex-col justify-center content-center py-4 px-4 text-xs bg-indigo-300 md:text-base js-show-on-scroll">
         <p>
           _&nbsp;
           <Link
