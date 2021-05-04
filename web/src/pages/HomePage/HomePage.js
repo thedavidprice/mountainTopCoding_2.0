@@ -11,18 +11,38 @@ import Skull from './skull.png'
 import Footer from '../../components/Footer'
 
 const HomePage = () => {
+  const callback = function (entries) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-fadeIn')
+      } else {
+        entry.target.classList.remove('animation-fadeIn')
+      }
+    })
+  }
+
+  const observer = new IntersectionObserver(callback)
+
+  const targets = document.querySelectorAll('.js-show-on-scroll')
+  targets.forEach(function (target) {
+    target.classList.add('opacity-0')
+    observer.observe(target)
+  })
+
   return (
     <div>
-      <div className="mx-6 my-6">
+      <div className="h-screen bg-indigo-100">
         <Logo />
       </div>
 
-      <p className="font-semibold text-xl md:text-5xl w-1/2 justify-center mx-auto">
-        Hello, I am <span className="text-blue-500">Isaac Tait</span> - a
-        Jamstack web developer.
-      </p>
+      <div className="h-screen bg-indigo-200 js-show-on-scroll">
+        <p className="font-semibold text-xl md:text-5xl w-1/2 justify-center mx-auto">
+          Hello, I am <span className="text-blue-500">Isaac Tait</span> - a
+          Jamstack web developer.
+        </p>
+      </div>
 
-      <div className="my-4 mx-4 text-xs md:text-base">
+      <div className="h-screen py-4 px-4 text-xs bg-indigo-300 md:text-base js-show-on-scroll">
         <p>
           _&nbsp;
           <Link
@@ -62,7 +82,7 @@ const HomePage = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-3 gap-2 md:grid-cols-4 md:gap-4 heropattern-topography-blue-500 pb-2">
+      <div className="h-screen grid grid-cols-3 gap-2 md:grid-cols-4 md:gap-4 heropattern-topography-blue-500 pb-2 js-show-on-scroll">
         <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
         <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
         <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 mr-8 mt-2">
@@ -71,7 +91,11 @@ const HomePage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={Palm} alt="palm tree icon" />
+            <img
+              src={Palm}
+              alt="palm tree icon"
+              className="animate-pulse duration-300"
+            />
           </a>
         </div>
         <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
