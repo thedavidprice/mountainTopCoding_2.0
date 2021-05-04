@@ -7,13 +7,15 @@ import Footer from '../../components/Footer'
 
 const AboutPage = () => {
   return (
-    <div className="text-lg bg-gray-500">
+    <div className="text-lg bg-gray-300">
       <Link to={routes.home()} className="mx-6">
         <Logo />
       </Link>
 
-      <div className="flex flex-col mx-4 mb-4">
-        <p className="font-medium text-2xl text-blue-500">About Me</p>
+      <div className="flex flex-col mx-4 mb-4 md:w-2/3 md:mx-auto">
+        <p className="font-medium text-2xl text-blue-500 tracking-wide">
+          About Me
+        </p>
         <p className="mt-2">
           Hello, and welcome to mountainTopCoding(
           <span role="img" aria-label="mountain with snow-cap">
@@ -29,7 +31,7 @@ const AboutPage = () => {
         <img
           src={picture}
           alt="Isaac Tait's profile"
-          className="h-60 w-80 m-4 rounded-lg"
+          className="h-60 w-80 m-4 rounded-lg shadow-lg mx-auto"
         />
         <p className="mt-2">
           On January 1, 2017 my son Tadashi Ethan Tait was born in Fukushima
@@ -42,7 +44,7 @@ const AboutPage = () => {
         <img
           src={tokyo}
           alt="Isaac and Tadashi looking over Tokyo Bay"
-          className="h-100 w-80 m-4 rounded-lg"
+          className="h-100 w-80 m-4 rounded-lg shadow-lg mx-auto"
         />
         <p className="mt-2">
           In 2012 when I took up skiing I lamented the fact that I had not
