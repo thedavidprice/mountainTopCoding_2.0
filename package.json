@@ -8,7 +8,7 @@
     ]
   },
   "devDependencies": {
-    "@redwoodjs/core": "^0.30.1",
+    "@redwoodjs/core": "^0.31.2",
     "svg-react-loader": "^0.4.6"
   },
   "eslintConfig": {
