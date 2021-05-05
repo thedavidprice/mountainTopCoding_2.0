@@ -30,8 +30,8 @@ const HomePage = () => {
   })
 
   return (
-    <div>
-      <div className="h-screen flex flex-wrap justify-center content-center bg-indigo-100">
+    <div className="p-4">
+      <div className="h-screen flex flex-wrap justify-center content-center bg-indigo-100 js-show-on-scroll">
         <Logo />
       </div>
 
@@ -42,44 +42,50 @@ const HomePage = () => {
         </p>
       </div>
 
-      <div className="h-screen flex flex-col justify-center content-center py-4 px-4 text-xs bg-indigo-300 md:text-base js-show-on-scroll">
-        <p>
-          _&nbsp;
-          <Link
-            to={routes.about()}
-            className="text-blue-500 hover:bg-blue-500 hover:text-white"
-          >
-            About
-          </Link>
-        </p>
-        <p>
-          _&nbsp;The OG{' '}
-          <a
-            href="https://mountaintopcoding.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-500 hover:bg-blue-500 hover:text-white"
-          >
-            <code>
-              mountainTopCoding(
-              <span role="img" aria-label="mountain with snow-cap">
-                &#127956;
-              </span>
-              );
-            </code>
-          </a>
-        </p>
-        <p>
-          _&nbsp;My{' '}
-          <a
-            href="https://mountaintop-coding.s3-us-west-1.amazonaws.com/Isaac+Tait+-+Junior+Web+Developer.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-500 hover:bg-blue-500 hover:text-white"
-          >
-            Resume
-          </a>
-        </p>
+      <div className="h-screen flex justify-center py-4 px-4 text-xs bg-indigo-300 md:text-base js-show-on-scroll">
+        <div>
+          <p>
+            _&nbsp;
+            <Link
+              to={routes.about()}
+              className="text-blue-500 hover:bg-blue-500 hover:text-white"
+            >
+              About
+            </Link>
+          </p>
+        </div>
+        <div>
+          <p>
+            _&nbsp;The OG{' '}
+            <a
+              href="https://mountaintopcoding.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:bg-blue-500 hover:text-white"
+            >
+              <code>
+                mountainTopCoding(
+                <span role="img" aria-label="mountain with snow-cap">
+                  &#127956;
+                </span>
+                );
+              </code>
+            </a>
+          </p>
+        </div>
+        <div>
+          <p>
+            _&nbsp;My{' '}
+            <a
+              href="https://mountaintop-coding.s3-us-west-1.amazonaws.com/Isaac+Tait+-+Junior+Web+Developer.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:bg-blue-500 hover:text-white"
+            >
+              Resume
+            </a>
+          </p>
+        </div>
       </div>
 
       <div className="h-screen grid grid-cols-3 gap-2 md:grid-cols-4 md:gap-4 heropattern-topography-blue-500 pb-2 js-show-on-scroll">
