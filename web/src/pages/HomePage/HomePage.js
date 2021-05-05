@@ -35,17 +35,17 @@ const HomePage = () => {
         <Logo />
       </div>
 
-      <div className="h-screen flex flex-wrap justify-center content-center bg-indigo-200 js-show-on-scroll">
+      <div className="h-screen flex flex-wrap content-center bg-indigo-200 js-show-on-scroll">
         <p className="font-semibold text-xl md:text-5xl w-1/2 justify-center mx-auto">
           Hello, I am <span className="text-blue-500">Isaac Tait</span> - a
           Jamstack web developer.
         </p>
       </div>
 
-      <div className="h-screen flex justify-center py-4 px-4 text-xs bg-indigo-300 md:text-base js-show-on-scroll">
-        <div>
+      <div className="h-screen flex flex-col content-center text-xs bg-indigo-300 js-show-on-scroll md:text-base">
+        <div className="justify-center my-auto mx-auto">
           <p>
-            _&nbsp;
+            &#128760;&nbsp;
             <Link
               to={routes.about()}
               className="text-blue-500 hover:bg-blue-500 hover:text-white"
@@ -54,9 +54,9 @@ const HomePage = () => {
             </Link>
           </p>
         </div>
-        <div>
+        <div className="justify-center my-auto mx-auto">
           <p>
-            _&nbsp;The OG{' '}
+            &#128507;&nbsp;The OG{' '}
             <a
               href="https://mountaintopcoding.com"
               target="_blank"
@@ -73,9 +73,9 @@ const HomePage = () => {
             </a>
           </p>
         </div>
-        <div>
+        <div className="justify-center my-auto mx-auto">
           <p>
-            _&nbsp;My{' '}
+            &#127983;{' '}
             <a
               href="https://mountaintop-coding.s3-us-west-1.amazonaws.com/Isaac+Tait+-+Junior+Web+Developer.pdf"
               target="_blank"
