@@ -31,7 +31,7 @@ const HomePage = () => {
 
   return (
     <div className="p-4">
-      <div className="h-screen flex flex-wrap justify-center content-center bg-indigo-100 js-show-on-scroll">
+      <div className="h-screen flex flex-wrap justify-center content-center bg-indigo-100">
         <Logo />
       </div>
 
