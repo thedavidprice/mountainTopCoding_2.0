@@ -1,6 +1,6 @@
 import { Link, routes } from '@redwoodjs/router'
 
-import Logo from './mtntpcdng_lg.svg'
+//mport Logo from './mtntpcdng_lg.svg'
 import Palm from './palm.png'
 import Sword from './swords.png'
 import Compass from './compass.png'
@@ -31,9 +31,9 @@ const HomePage = () => {
 
   return (
     <div className="p-4">
-      <div className="h-screen flex flex-wrap justify-center content-center bg-indigo-100 js-show-on-scroll">
+      {/* <div className="h-screen flex flex-wrap justify-center content-center bg-indigo-100 js-show-on-scroll">
         <Logo />
-      </div>
+      </div> */}
 
       <div className="h-screen flex flex-wrap content-center bg-indigo-200 js-show-on-scroll">
         <p className="font-semibold text-xl md:text-5xl w-1/2 justify-center mx-auto">

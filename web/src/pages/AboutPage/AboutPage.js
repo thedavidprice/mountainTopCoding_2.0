@@ -2,15 +2,15 @@ import { Link, routes } from '@redwoodjs/router'
 
 import picture from './profile.jpg'
 import tokyo from './tokyoBay.png'
-import Logo from './mtntpcdng_lg.svg'
+//import Logo from './mtntpcdng_lg.svg'
 import Footer from '../../components/Footer'
 
 const AboutPage = () => {
   return (
     <div className="text-lg bg-gray-300">
-      <Link to={routes.home()} className="mx-6">
+      {/* <Link to={routes.home()} className="mx-6">
         <Logo />
-      </Link>
+      </Link> */}
 
       <div className="flex flex-col mx-4 mb-4 md:w-2/3 md:mx-auto">
         <p className="font-medium text-2xl text-blue-500 tracking-wide">
@@ -26,7 +26,8 @@ const AboutPage = () => {
         </p>
         <p className="mt-2">
           My journey to becoming a web developer started on March 12, 2019 but
-          to fully understand my story I have to go back a little further.
+          to fully understand my story I have to go back a little further than
+          that...
         </p>
         <img
           src={picture}
@@ -54,10 +55,10 @@ const AboutPage = () => {
           opportunity.
         </p>
         <p className="mt-2">
-          I have had a blast learning web development and I have built some cool
-          apps and created some fun projects. This website is a venue for those
-          endeavors so stay for a while, poke around a bit, or follow me
-          on&nbsp;
+          I am having a blast learning web development and I have built some
+          cool apps (IMHO) and created some fun projects. This website is a
+          venue for those endeavors so stay for a while, poke around a bit, or
+          follow me on&nbsp;
           <a
             href="https://twitter.com/Isaac_Tait_83"
             target="_blank"
