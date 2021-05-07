@@ -8,7 +8,7 @@ import Footer from '../../components/Footer'
 const AboutPage = () => {
   return (
     <div>
-      <div className="my-2 rounded-lg shadow-lg text-lg w-1/2 flex justify-center mx-auto bg-indigo-100">
+      <div className="my-2 rounded-lg shadow-lg text-lg md:w-1/2 md:flex md:justify-center md:mx-auto bg-indigo-100">
         {/* <Link to={routes.home()} className="mx-6">
         <Logo />
       </Link> */}
