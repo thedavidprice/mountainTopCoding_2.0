@@ -2,17 +2,18 @@ import { Link, routes } from '@redwoodjs/router'
 
 import picture from './profile.jpg'
 import tokyo from './tokyoBay.png'
-//import Logo from './mtntpcdng_lg.png'
+import logo from './mtntpcdng_lg.png'
 import Footer from '../../components/Footer'
 
 const AboutPage = () => {
   return (
     <div>
+      <div className="mx-8 md:w-1/2 md:flex md:justify-center md:mx-auto">
+        <Link to={routes.home()} className="mx-6">
+          <img src={logo} alt="mtntpcdng" />
+        </Link>
+      </div>
       <div className="my-2 rounded-lg shadow-lg text-lg md:w-1/2 md:flex md:justify-center md:mx-auto bg-indigo-100">
-        {/* <Link to={routes.home()} className="mx-6">
-          <img src={Logo} alt="Mountain Top Coding Logo" />
-        </Link> */}
-
         <div className="flex flex-col mx-4 mb-4 md:w-2/3 md:mx-auto">
           <p className="font-medium text-2xl text-blue-500 tracking-wide">
             About Me
