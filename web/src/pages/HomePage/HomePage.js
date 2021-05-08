@@ -119,11 +119,7 @@ const HomePage = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                src={Palm}
-                alt="palm tree icon"
-                className="animate-pulse duration-300"
-              />
+              Fallfish Tenkara
             </a>
           </div>
           <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
