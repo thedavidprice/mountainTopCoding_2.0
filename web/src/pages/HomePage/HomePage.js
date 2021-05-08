@@ -31,13 +31,29 @@ const HomePage = () => {
 
   return (
     <div>
-      <div className="p-4 ">
-        <div className="rounded-lg shadow-lg mb-2 h-screen flex flex-wrap justify-center content-center bg-indigo-100 js-show-on-scroll">
+      <div className="p-4">
+        <div className="rounded-lg shadow-lg mb-2 h-screen flex flex-col justify-center content-center bg-indigo-100 js-show-on-scroll">
           <img
             src={Logo}
             alt="Mountain Top Coding Logo"
             className="w-1/2 flex justify-center mx-auto"
           />
+          <div className="w-1/2 flex justify-center mx-auto mt-40">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6 animate-bounce"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 14l-7 7m0 0l-7-7m7 7V3"
+              />
+            </svg>
+          </div>
         </div>
 
         <div className="rounded-lg shadow-lg mb-2 h-screen flex flex-wrap content-center bg-indigo-200 js-show-on-scroll">
@@ -53,10 +69,11 @@ const HomePage = () => {
               &#128760;&nbsp;
               <Link
                 to={routes.about()}
-                className="text-blue-500 hover:bg-blue-500 hover:text-white"
+                className="text-blue-500 underline hover:bg-blue-500 hover:text-white"
               >
                 About
               </Link>
+              &nbsp;Me
             </p>
           </div>
           <div className="justify-center my-auto mx-auto">
@@ -66,7 +83,7 @@ const HomePage = () => {
                 href="https://mountaintopcoding.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-500 hover:bg-blue-500 hover:text-white"
+                className="text-blue-500 underline hover:bg-blue-500 hover:text-white"
               >
                 <code>
                   mountainTopCoding(
@@ -80,12 +97,12 @@ const HomePage = () => {
           </div>
           <div className="justify-center my-auto mx-auto">
             <p>
-              &#127983;{' '}
+              &#127983; My{' '}
               <a
                 href="https://mountaintop-coding.s3-us-west-1.amazonaws.com/Isaac+Tait+-+Junior+Web+Developer.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-500 hover:bg-blue-500 hover:text-white"
+                className="text-blue-500 underline hover:bg-blue-500 hover:text-white"
               >
                 Resume
               </a>
