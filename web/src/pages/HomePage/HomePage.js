@@ -1,7 +1,8 @@
 import { Link, routes } from '@redwoodjs/router'
+//import React, { useRef, useEffect, useState } from 'react'
 
 import Logo from './mtntpcdng_lg.png'
-import Palm from './palm.png'
+//import Palm from './palm.png'
 import Sword from './swords.png'
 import Compass from './compass.png'
 import Ship from './ship.png'
@@ -9,6 +10,27 @@ import Chest from './chest.png'
 import Skull from './skull.png'
 
 import Footer from '../../components/Footer'
+
+// const useElementOnScreen = (options) => {
+//   const containerRef = useRef(null)
+//   const [isVisible, setIsVisible] = useState(false)
+
+//   const callbackFunction = (entries) => {
+//     const [entry] = entries
+//     setIsVisible(entry.isIntersecting)
+//   }
+
+//   useEffect(() => {
+//     const observer = new IntersectionObserver(callbackFunction, options)
+//     if (containerRef.current) observer.observe(containerRef.current)
+
+//     return () => {
+//       if (containerRef.current) observer.unobserve(containerRef.current)
+//     }
+//   }, [containerRef, options])
+
+//   return [containerRef, isVisible]
+// }
 
 const HomePage = () => {
   const callback = function (entries) {
@@ -29,10 +51,19 @@ const HomePage = () => {
     observer.observe(target)
   })
 
+  // const [containerRef, isVisible] = useElementOnScreen({
+  //   root: null,
+  //   rootMargin: '0px',
+  //   threshold: 1.0,
+  // })
+
   return (
     <div>
       <div className="p-4">
-        <div className="rounded-lg shadow-lg mb-2 h-screen flex flex-col justify-center content-center bg-indigo-100 js-show-on-scroll">
+        <div
+          //ref={containerRef}
+          className="rounded-lg shadow-lg mb-2 h-screen flex flex-col justify-center content-center bg-indigo-100 js-show-on-scroll"
+        >
           <img
             src={Logo}
             alt="Mountain Top Coding Logo"
