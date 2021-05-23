@@ -42,7 +42,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    options: {
+      safelist: ['.js-show-on-scroll'],
+    },
   },
   plugins: [
     require('tailwindcss-hero-patterns'),
