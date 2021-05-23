@@ -11,27 +11,6 @@ import Skull from './skull.png'
 
 import Footer from '../../components/Footer'
 
-// const useElementOnScreen = (options) => {
-//   const containerRef = useRef(null)
-//   const [isVisible, setIsVisible] = useState(false)
-
-//   const callbackFunction = (entries) => {
-//     const [entry] = entries
-//     setIsVisible(entry.isIntersecting)
-//   }
-
-//   useEffect(() => {
-//     const observer = new IntersectionObserver(callbackFunction, options)
-//     if (containerRef.current) observer.observe(containerRef.current)
-
-//     return () => {
-//       if (containerRef.current) observer.unobserve(containerRef.current)
-//     }
-//   }, [containerRef, options])
-
-//   return [containerRef, isVisible]
-// }
-
 const HomePage = () => {
   const callback = function (entries) {
     entries.forEach((entry) => {
@@ -50,12 +29,6 @@ const HomePage = () => {
     target.classList.add('opacity-0')
     observer.observe(target)
   })
-
-  // const [containerRef, isVisible] = useElementOnScreen({
-  //   root: null,
-  //   rootMargin: '0px',
-  //   threshold: 1.0,
-  // })
 
   return (
     <div>
