@@ -38,7 +38,7 @@ const HomePage = () => {
       if (entry.isIntersecting) {
         entry.target.classList.add('animate-fadeIn')
       } else {
-        entry.target.classList.remove('animation-fadeIn')
+        entry.target.classList.remove('animate-fadeIn')
       }
     })
   }
