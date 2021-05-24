@@ -24,7 +24,7 @@ module.exports = {
     heroPatternsColors: ['blue'],
     extend: {
       animation: {
-        fadeIn: 'fadeIn 5s ease-in forwards',
+        fadeIn: 'fadeIn 3s ease-in forwards',
       },
       keyframes: {
         fadeIn: {
