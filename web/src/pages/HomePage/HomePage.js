@@ -33,7 +33,7 @@ const HomePage = () => {
   return (
     <div>
       <div className="p-4">
-        <div className="rounded-lg shadow-lg mb-2 h-screen flex flex-col justify-center content-center bg-indigo-100 js-show-on-scroll">
+        <div className="rounded-lg shadow-lg mb-2 h-screen flex flex-col justify-center content-center bg-blue-100 js-show-on-scroll">
           <img
             src={Logo}
             alt="Mountain Top Coding Logo"
@@ -57,14 +57,14 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="rounded-lg shadow-lg mb-2 h-screen flex flex-wrap content-center bg-indigo-200 js-show-on-scroll">
+        <div className="rounded-lg shadow-lg mb-2 h-screen flex flex-wrap content-center bg-blue-200 js-show-on-scroll">
           <p className="font-semibold text-xl md:text-5xl w-1/2 justify-center mx-auto">
             Hello, I am <span className="text-blue-500">Isaac Tait</span> - a
             Jamstack web developer.
           </p>
         </div>
 
-        <div className="rounded-lg shadow-lg mb-2 h-screen flex flex-col content-center text-xs bg-indigo-300 js-show-on-scroll md:text-base">
+        <div className="rounded-lg shadow-lg mb-2 h-screen flex flex-col content-center text-xs bg-blue-300 js-show-on-scroll md:text-base">
           <div className="justify-center my-auto mx-auto">
             <p>
               &#128760;&nbsp;

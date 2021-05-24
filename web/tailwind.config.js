@@ -14,9 +14,7 @@ module.exports = {
       indigo: colors.indigo,
       red: colors.rose,
       yellow: colors.amber,
-      blue: {
-        DEFAULT: '#4391cdff',
-      },
+      blue: colors.blue,
     },
     linearGradientColors: (theme) => theme('colors'),
     heroPatterns: {
