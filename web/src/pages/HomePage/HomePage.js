@@ -2,7 +2,7 @@ import { Link, routes } from '@redwoodjs/router'
 //import React, { useRef, useEffect, useState } from 'react'
 
 import Logo from './mtntpcdng_lg.png'
-//import Palm from './palm.png'
+import Palm from './palm.png'
 import Sword from './swords.png'
 import Compass from './compass.png'
 import Ship from './ship.png'
@@ -33,10 +33,7 @@ const HomePage = () => {
   return (
     <div>
       <div className="p-4">
-        <div
-          //ref={containerRef}
-          className="rounded-lg shadow-lg mb-2 h-screen flex flex-col justify-center content-center bg-indigo-100 js-show-on-scroll"
-        >
+        <div className="rounded-lg shadow-lg mb-2 h-screen flex flex-col justify-center content-center bg-indigo-100 js-show-on-scroll">
           <img
             src={Logo}
             alt="Mountain Top Coding Logo"
@@ -117,15 +114,17 @@ const HomePage = () => {
         <div className="rounded-lg shadow-lg mb-2 h-screen grid grid-cols-3 gap-2 md:grid-cols-4 md:gap-4 heropattern-topography-blue-500 pb-2 js-show-on-scroll">
           <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
           <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
+
           <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 mr-8 mt-2">
             <a
               href="https://www.fallfishtenkara.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Fallfish Tenkara
+              <img src={Palm} alt="palm tree" />
             </a>
           </div>
+
           <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
           <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 ml-12">
             <a
@@ -138,6 +137,7 @@ const HomePage = () => {
           </div>
           <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
           <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
+
           <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 ml-12">
             <a
               href="https://github.com/Isaac-Tait"
@@ -148,6 +148,7 @@ const HomePage = () => {
             </a>
           </div>
           <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
+
           <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 ml-20">
             <a
               href="https://github.com/Isaac-Tait/A-Novel-by-Isaac-Tait"
@@ -159,6 +160,7 @@ const HomePage = () => {
           </div>
           <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
           <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
+
           <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 ml-2">
             <a
               href="https://www.linkedin.com/in/isaacmtait/"
@@ -170,6 +172,7 @@ const HomePage = () => {
           </div>
           <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
           <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
+
           <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 mr-12">
             <a
               href="https://blog.mountaintopcoding.com"

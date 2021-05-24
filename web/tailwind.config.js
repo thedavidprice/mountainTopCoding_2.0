@@ -2,7 +2,7 @@ const heropatterns = require('tailwindcss-hero-patterns/src/patterns')
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  purge: ['./src/**/*.js', './src/**/*.jsx', './src/**/*.ts', './src/**/*.tsx'],
+  // purge: ['./src/**/*.js', './src/**/*.jsx', './src/**/*.ts', './src/**/*.tsx'],
   darkMode: 'media',
   theme: {
     colors: {
@@ -42,9 +42,6 @@ module.exports = {
     },
   },
   variants: {},
-  options: {
-    safelist: ['.js-show-on-scroll'],
-  },
   plugins: [
     require('tailwindcss-hero-patterns'),
     require('tailwindcss-gradients'),
