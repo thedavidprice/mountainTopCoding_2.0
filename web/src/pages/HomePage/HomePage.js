@@ -67,7 +67,9 @@ const HomePage = () => {
         <div className="rounded-lg shadow-lg mb-2 h-screen flex flex-col content-center text-xs bg-blue-300 js-show-on-scroll md:text-base">
           <div className="justify-center my-auto mx-auto">
             <p>
-              &#128760;&nbsp;
+              <span role="img" aria-label="ufo flying saucer">
+                &#128760;{' '}
+              </span>
               <Link
                 to={routes.about()}
                 className="text-blue-500 underline hover:bg-blue-500 hover:text-white"
@@ -79,7 +81,10 @@ const HomePage = () => {
           </div>
           <div className="justify-center my-auto mx-auto">
             <p>
-              &#128507;&nbsp;The OG{' '}
+              <span role="img" aria-label="snow capped mountain">
+                &#128507;{' '}
+              </span>
+              The OG{' '}
               <a
                 href="https://mountaintopcoding.com"
                 target="_blank"
@@ -98,7 +103,10 @@ const HomePage = () => {
           </div>
           <div className="justify-center my-auto mx-auto">
             <p>
-              &#127983; My{' '}
+              <span role="img" aria-label="japanese castle">
+                &#127983;{' '}
+              </span>
+              My{' '}
               <a
                 href="https://mountaintop-coding.s3-us-west-1.amazonaws.com/Isaac+Tait+-+Junior+Web+Developer.pdf"
                 target="_blank"
