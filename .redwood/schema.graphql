@@ -1,0 +1,43 @@
+input CreateUserExampleInput {
+  email: String!
+  name: String
+}
+
+scalar Date
+
+scalar DateTime
+
+scalar JSON
+
+scalar JSONObject
+
+type Mutation {
+  createUserExample(input: CreateUserExampleInput!): UserExample!
+  updateUserExample(id: Int!, input: UpdateUserExampleInput!): UserExample!
+  deleteUserExample(id: Int!): UserExample!
+}
+
+type Query {
+  redwood: Redwood
+  userExample(id: Int!): UserExample
+  userExamples: [UserExample!]!
+}
+
+type Redwood {
+  version: String
+  currentUser: JSON
+  prismaVersion: String
+}
+
+scalar Time
+
+input UpdateUserExampleInput {
+  email: String
+  name: String
+}
+
+type UserExample {
+  id: Int!
+  email: String!
+  name: String
+}
