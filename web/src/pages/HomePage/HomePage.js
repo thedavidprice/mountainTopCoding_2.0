@@ -59,8 +59,12 @@ const HomePage = () => {
 
         <div className="rounded-lg shadow-lg mb-2 h-screen flex flex-wrap content-center bg-blue-200 js-show-on-scroll">
           <p className="font-semibold text-xl md:text-5xl w-1/2 justify-center mx-auto">
-            Hello, I am <span className="text-blue-500">Isaac Tait</span> - a
-            Jamstack web developer.
+            Hello{' '}
+            <span role="img" aria-label="waving hand">
+              &#128075;
+            </span>
+            , I am <span className="text-blue-500">Isaac Tait</span> - a
+            Jamstack web developer who loves the outdoors.
           </p>
         </div>
 
