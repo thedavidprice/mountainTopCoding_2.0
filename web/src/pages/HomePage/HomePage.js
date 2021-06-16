@@ -2,12 +2,12 @@ import { Link, routes } from '@redwoodjs/router'
 //import React, { useRef, useEffect, useState } from 'react'
 
 import Logo from './mtntpcdng_lg.png'
-import Palm from './palm.png'
-import Sword from './swords.png'
-import Compass from './compass.png'
-import Ship from './ship.png'
-import Chest from './chest.png'
-import Skull from './skull.png'
+import mountainOne from './mountainOne.png'
+import campFire from './campFire.png'
+import map from './map.png'
+import iceAxe from './iceAxe.png'
+import mountainTwo from './mountainTwo.png'
+import rope from './rope.png'
 
 import Footer from '../../components/Footer'
 
@@ -129,7 +129,11 @@ const HomePage = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={Palm} alt="palm tree" />
+              <img
+                src={mountainOne}
+                alt="hand drawn mountain"
+                title="My adventures in Japan"
+              />
             </a>
           </div>
 
@@ -140,7 +144,11 @@ const HomePage = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={Compass} alt="compass" />
+              <img
+                src={iceAxe}
+                alt="a glacier crossing tool"
+                title="My VW Bus website"
+              />
             </a>
           </div>
           <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
@@ -152,18 +160,26 @@ const HomePage = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={Ship} alt="ship" />
+              <img
+                src={campFire}
+                alt="a lovely crackling campfire"
+                title="My GitHub Profile"
+              />
             </a>
           </div>
           <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
 
           <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4 ml-20">
             <a
-              href="https://github.com/Isaac-Tait/A-Novel-by-Isaac-Tait"
+              href="https://macadamgrinding.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={Chest} alt="treasure chest" />
+              <img
+                src={map}
+                alt="a map over a map..."
+                title="My gravel cylcing website"
+              />
             </a>
           </div>
           <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
@@ -175,7 +191,11 @@ const HomePage = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={Skull} alt="skull and cross bones" />
+              <img
+                src={rope}
+                alt="rope, a climbers best friend"
+                title="My Linkedin profile"
+              />
             </a>
           </div>
           <div className="box-content h-12 w-12 md:h-32 md:w-32 p-4"></div>
@@ -187,7 +207,11 @@ const HomePage = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={Sword} alt="crossed swords" />
+              <img
+                src={mountainTwo}
+                alt="another beautiful mountain"
+                title="My web development blog"
+              />
             </a>
           </div>
         </div>
