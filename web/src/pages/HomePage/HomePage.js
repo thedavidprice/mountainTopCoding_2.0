@@ -121,6 +121,22 @@ const HomePage = () => {
               </a>
             </p>
           </div>
+          <div className="justify-center my-auto mx-auto">
+            <p>
+              <span role="img" aria-label="evergreen tree">
+              &#127794;{' '}
+              </span>
+              A collection of my{' '}
+              <a
+                href="https://isaac-tait.github.io"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 underline hover:bg-blue-500 hover:text-white"
+              >
+                writing
+              </a>
+            </p>
+          </div>
         </div>
 
         <div className="rounded-lg shadow-lg mb-2 h-screen grid grid-cols-3 gap-2 md:grid-cols-4 md:gap-4 heropattern-topography-blue-500 pb-2 js-show-on-scroll">
@@ -182,7 +198,7 @@ const HomePage = () => {
               <img
                 src={map}
                 alt="a map over a map..."
-                title="My gravel cylcing website"
+                title="My gravel cycling website"
               />
             </a>
           </div>

@@ -24,8 +24,9 @@
     "tailwindcss-hero-patterns": "^0.0.1"
   },
   "devDependencies": {
-    "autoprefixer": "9.8.6",
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
     "postcss-loader": "4.0.2",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+    "tailwindcss": "^2.2.2"
   }
 }
