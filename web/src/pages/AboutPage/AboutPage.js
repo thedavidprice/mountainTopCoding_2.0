@@ -1,7 +1,7 @@
 import { Link, routes } from '@redwoodjs/router'
 
 import picture from './profile.jpg'
-import tokyo from './tokyoBay.png'
+import tokyo from './tokyoBay.heic'
 import logo from './mtntpcdng_lg.png'
 import Footer from '../../components/Footer'
 
