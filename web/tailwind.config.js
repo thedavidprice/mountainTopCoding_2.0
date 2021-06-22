@@ -2,7 +2,10 @@ const heropatterns = require('tailwindcss-hero-patterns/src/patterns')
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  // purge: ['./src/**/*.js', './src/**/*.jsx', './src/**/*.ts', './src/**/*.tsx'],
+  purge: {
+    enabled: true,
+    content: ['./src/**/*.js'],
+  },
   darkMode: 'media',
   theme: {
     colors: {
