@@ -1,5 +1,4 @@
 import { Link, routes } from '@redwoodjs/router'
-//import React, { useRef, useEffect, useState } from 'react'
 
 import Logo from './mtntpcdng_lg.png'
 import mountainOne from './mountainOne.png'
@@ -124,7 +123,7 @@ const HomePage = () => {
           <div className="justify-center my-auto mx-auto">
             <p>
               <span role="img" aria-label="evergreen tree">
-              &#127794;{' '}
+                &#127794;{' '}
               </span>
               A collection of my{' '}
               <a
