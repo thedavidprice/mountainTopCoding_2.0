@@ -1,2 +1,5 @@
-export declare function not(value: any): boolean;
+export declare function not(
+    value: any
+): value is false | "" | 0 | null | undefined;
+
 export default not;

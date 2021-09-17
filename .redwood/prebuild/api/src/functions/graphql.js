@@ -1,0 +1,26 @@
+import { createGraphQLHandler, makeMergedSchema, makeServices } from '@redwoodjs/api';
+let schemas = {};
+import * as schemas_userExamples_sdl from "../graphql/userExamples.sdl";
+schemas.userExamples_sdl = schemas_userExamples_sdl;
+import { db } from "../lib/db";
+let services = {};
+import * as services_userExamples_userExamples from "../services/userExamples/userExamples";
+services.userExamples_userExamples = services_userExamples_userExamples;
+import { logger } from "../lib/logger";
+export const handler = createGraphQLHandler({
+  loggerConfig: {
+    logger,
+    options: {}
+  },
+  schema: makeMergedSchema({
+    schemas,
+    services: makeServices({
+      services
+    })
+  }),
+  onException: () => {
+    // Disconnect from your database with an unhandled exception.
+    db.$disconnect();
+  }
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uL2FwaS9zcmMvZnVuY3Rpb25zL2dyYXBocWwuanMiXSwibmFtZXMiOlsiY3JlYXRlR3JhcGhRTEhhbmRsZXIiLCJtYWtlTWVyZ2VkU2NoZW1hIiwibWFrZVNlcnZpY2VzIiwiZGIiLCJsb2dnZXIiLCJoYW5kbGVyIiwibG9nZ2VyQ29uZmlnIiwib3B0aW9ucyIsInNjaGVtYSIsInNjaGVtYXMiLCJzZXJ2aWNlcyIsIm9uRXhjZXB0aW9uIiwiJGRpc2Nvbm5lY3QiXSwibWFwcGluZ3MiOiJBQUFBLFNBQ0VBLG9CQURGLEVBRUVDLGdCQUZGLEVBR0VDLFlBSEYsUUFJTyxnQkFKUDs7OztBQU9BLFNBQVNDLEVBQVQ7Ozs7QUFFQSxTQUFTQyxNQUFUO0FBRUEsT0FBTyxNQUFNQyxPQUFPLEdBQUdMLG9CQUFvQixDQUFDO0FBQzFDTSxFQUFBQSxZQUFZLEVBQUU7QUFBRUYsSUFBQUEsTUFBRjtBQUFVRyxJQUFBQSxPQUFPLEVBQUU7QUFBbkIsR0FENEI7QUFFMUNDLEVBQUFBLE1BQU0sRUFBRVAsZ0JBQWdCLENBQUM7QUFDdkJRLElBQUFBLE9BRHVCO0FBRXZCQyxJQUFBQSxRQUFRLEVBQUVSLFlBQVksQ0FBQztBQUFFUSxNQUFBQTtBQUFGLEtBQUQ7QUFGQyxHQUFELENBRmtCO0FBTzFDQyxFQUFBQSxXQUFXLEVBQUUsTUFBTTtBQUNqQjtBQUNBUixJQUFBQSxFQUFFLENBQUNTLFdBQUg7QUFDRDtBQVZ5QyxDQUFELENBQXBDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHtcbiAgY3JlYXRlR3JhcGhRTEhhbmRsZXIsXG4gIG1ha2VNZXJnZWRTY2hlbWEsXG4gIG1ha2VTZXJ2aWNlcyxcbn0gZnJvbSAnQHJlZHdvb2Rqcy9hcGknXG5cbmltcG9ydCBzY2hlbWFzIGZyb20gJ3NyYy9ncmFwaHFsLyoqLyoue2pzLHRzfSdcbmltcG9ydCB7IGRiIH0gZnJvbSAnc3JjL2xpYi9kYidcbmltcG9ydCBzZXJ2aWNlcyBmcm9tICdzcmMvc2VydmljZXMvKiovKi57anMsdHN9J1xuaW1wb3J0IHsgbG9nZ2VyIH0gZnJvbSAnc3JjL2xpYi9sb2dnZXInXG5cbmV4cG9ydCBjb25zdCBoYW5kbGVyID0gY3JlYXRlR3JhcGhRTEhhbmRsZXIoe1xuICBsb2dnZXJDb25maWc6IHsgbG9nZ2VyLCBvcHRpb25zOiB7fSB9LFxuICBzY2hlbWE6IG1ha2VNZXJnZWRTY2hlbWEoe1xuICAgIHNjaGVtYXMsXG4gICAgc2VydmljZXM6IG1ha2VTZXJ2aWNlcyh7IHNlcnZpY2VzIH0pLFxuICB9KSxcblxuICBvbkV4Y2VwdGlvbjogKCkgPT4ge1xuICAgIC8vIERpc2Nvbm5lY3QgZnJvbSB5b3VyIGRhdGFiYXNlIHdpdGggYW4gdW5oYW5kbGVkIGV4Y2VwdGlvbi5cbiAgICBkYi4kZGlzY29ubmVjdCgpXG4gIH0sXG59KVxuIl19
