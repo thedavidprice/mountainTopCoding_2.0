@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../src/graphql/userExamples.sdl.js"],
-  "sourcesContent": ["export const schema = gql`\n  type UserExample {\n    id: Int!\n    email: String!\n    name: String\n  }\n\n  type Query {\n    userExamples: [UserExample!]!\n    userExample(id: Int!): UserExample\n  }\n\n  input CreateUserExampleInput {\n    email: String!\n    name: String\n  }\n\n  input UpdateUserExampleInput {\n    email: String\n    name: String\n  }\n\n  type Mutation {\n    createUserExample(input: CreateUserExampleInput!): UserExample!\n    updateUserExample(id: Int!, input: UpdateUserExampleInput!): UserExample!\n    deleteUserExample(id: Int!): UserExample!\n  }\n`\n"],
-  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;yBAAsB;AAAf,MAAM,SAAS;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
-  "names": []
-}

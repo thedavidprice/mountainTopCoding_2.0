@@ -8,8 +8,7 @@
     ]
   },
   "devDependencies": {
-    "@redwoodjs/core": "^0.36.4",
-    "svg-react-loader": "^0.4.6"
+    "@redwoodjs/core": "^0.36.4"
   },
   "eslintConfig": {
     "extends": "@redwoodjs/eslint-config",
@@ -18,12 +17,5 @@
   "engines": {
     "node": ">=14",
     "yarn": ">=1.15"
-  },
-  "resolutions": {
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
-  },
-  "dependencies": {
-    "@ardatan/aggregate-error": "^0.0.6"
   }
 }

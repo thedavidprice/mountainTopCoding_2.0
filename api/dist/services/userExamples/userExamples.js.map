@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../src/services/userExamples/userExamples.js"],
-  "sourcesContent": ["import { db } from 'src/lib/db'\n\nexport const userExamples = () => {\n  return db.userExample.findMany()\n}\n\nexport const userExample = ({ id }) => {\n  return db.userExample.findUnique({\n    where: { id },\n  })\n}\n\nexport const createUserExample = ({ input }) => {\n  return db.userExample.create({\n    data: input,\n  })\n}\n\nexport const updateUserExample = ({ id, input }) => {\n  return db.userExample.update({\n    data: input,\n    where: { id },\n  })\n}\n\nexport const deleteUserExample = ({ id }) => {\n  return db.userExample.delete({\n    where: { id },\n  })\n}\n"],
-  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;AAAA;;;;;;;gBAAA;AAEO,MAAM,eAAe,MAAM;AAChC,SAAO,aAAG,YAAY;;AAGjB,MAAM,cAAc,CAAC;EAAE;MAAS;AACrC,SAAO,aAAG,YAAY,WAAW;IAC/B,OAAO;MAAE;;;;AAIN,MAAM,oBAAoB,CAAC;EAAE;MAAY;AAC9C,SAAO,aAAG,YAAY,OAAO;IAC3B,MAAM;;;AAIH,MAAM,oBAAoB,CAAC;EAAE;EAAI;MAAY;AAClD,SAAO,aAAG,YAAY,OAAO;IAC3B,MAAM;IACN,OAAO;MAAE;;;;AAIN,MAAM,oBAAoB,CAAC;EAAE;MAAS;AAC3C,SAAO,aAAG,YAAY,OAAO;IAC3B,OAAO;MAAE;;;;",
-  "names": []
-}
