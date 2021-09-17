@@ -1,13 +1,6 @@
 # Mountain Top Coding 2.0
-My current portfolio site is in sore need of an update. This will be it... Someday.
+My current portfolio site was in sore need of an update. Deciding what to build a new one with was simple...
 
-## An Idea
-I think it will be cool to have a snazzy portfolio site...
-
-### Vision
-I wonder what I should use to build it with? Oh I know...
-
-### Rebirth
-... and here we are.
+It has been a labor of love that pulled, stretched, and encouraged me to grow as a developer.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9fef3e63-4e8c-4ae9-bfa3-102b1afd12ec/deploy-status)](https://app.netlify.com/sites/dreamy-goodall-2cceac/deploys)
